@@ -1,0 +1,34 @@
+body{
+    min-height: 100vh;
+    grid-template-columns: 1fr auto auto 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 1em;
+    overflow-x: hidden;
+}
+#knop{
+}
+.vlakje, .vlakje2{
+    opacity: 0%;
+    width: 5em;
+    padding: 0;
+    margin: 0;
+
+
+    transition: transform 2s cubic-bezier(.17,3.67,.71,1.29);
+}
+
+.vlakje p, .vlakje2 p{
+    color: #fff;
+}
+.vlakje--schuif-uit{
+    transform: translateX(20vw) rotate(-360deg) scale(2, 2);
+    opacity: 100%;
+    background: dodgerblue;
+
+}
+
+.vlakje--schuif-uit p{
+    color: #000;
+    text-align: center;
+}
